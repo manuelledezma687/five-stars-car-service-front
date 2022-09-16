@@ -2,15 +2,15 @@
 
 nav {
 	display: flex;
-	font-size: 1.5rem;
-	justify-content: center;
+	font-size: var(--sm);
+	justify-content:space-between;
 }
 .menu {
 	display: none;
 }
 .fivestars {
 	width: 254px;
-	padding: 2% 8% 0% 1%;
+	padding: 1% 2% 0% 4%;
 }
 
 .navbar ul{

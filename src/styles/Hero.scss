@@ -1,33 +1,40 @@
 @import 'vars';
 
 .hero-container {
-    display: block;
+    display: flex;
     margin: auto;
+}
+
+.hero-banner {
+    background-color: var(--white);
 }
 
 .content-box {
     margin-top: 3%;
-    width: 50%;
     text-align: end;
     align-items: flex-end;
     padding: 0% 2% 2% 2%;
+
 }
+
 .content-box h1 {
     color: var(--golden);
-    font-size: 2rem;
-}
-
-.content-box p {
-    font-size: 1rem;
 }
 
 
+.hero-calculator {
+    background-color: var(--golden);
+    padding: 2% 2% 2% 2%;
+}
 
 @media (max-width: 850px) {
 
-    .content-box {
-        margin-top: 3%;
-        width: 100%;
+    .hero-container {
+        display: block;
+        margin: auto;
     }
 
+    .white-corolla{
+        width: 80%;
+    }
 }
