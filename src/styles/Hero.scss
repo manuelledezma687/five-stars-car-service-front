@@ -1,0 +1,33 @@
+@import 'vars';
+
+.hero-container {
+    display: block;
+    margin: auto;
+}
+
+.content-box {
+    margin-top: 3%;
+    width: 50%;
+    text-align: end;
+    align-items: flex-end;
+    padding: 0% 2% 2% 2%;
+}
+.content-box h1 {
+    color: var(--golden);
+    font-size: 2rem;
+}
+
+.content-box p {
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 850px) {
+
+    .content-box {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+}

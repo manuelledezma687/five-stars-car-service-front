@@ -1,0 +1,58 @@
+@import 'vars';
+
+nav {
+	display: flex;
+	font-size: 1.5rem;
+	justify-content: center;
+}
+.menu {
+	display: none;
+}
+.fivestars {
+	width: 254px;
+	padding: 2% 8% 0% 1%;
+}
+
+.navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+.navbar {
+	display: flex;
+}
+.navbar ul {
+	margin-left: 12px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: var(--black);
+	padding: 8px;
+}
+
+.navbar ul li a:hover{
+	text-decoration: none;
+	padding: 8px;
+	border-bottom: 2px solid var(--golden);
+	text-transform: uppercase;
+}
+
+
+
+@media (max-width: 850px) {
+	.menu {
+		display: block;
+	}
+	.navbar ul {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+}
