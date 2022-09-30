@@ -4,55 +4,22 @@ nav {
 	display: flex;
 	font-size: var(--sm);
 	justify-content:space-between;
+	align-content: center;
+	padding: 10px 0 0 2px;
 }
-.menu {
-	display: none;
-}
+
 .fivestars {
-	width: 254px;
-	padding: 1% 2% 0% 4%;
+	left: 60px;
+	width: 410px;
+	position: absolute;
 }
 
-.navbar ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	height: 60px;
+.menu {
+	top: 0;
+	width: 7rem;
+	height: auto;
+	border-radius: 6px;
+	position: absolute;
+	right: 50px;
 }
 
-.navbar {
-	display: flex;
-}
-.navbar ul {
-	margin-left: 12px;
-}
-.navbar ul li a{
-	text-decoration: none;
-	color: var(--black);
-	padding: 8px;
-}
-
-.navbar ul li a:hover{
-	text-decoration: none;
-	padding: 8px;
-	border-bottom: 2px solid var(--golden);
-	text-transform: uppercase;
-}
-
-
-
-@media (max-width: 850px) {
-	.menu {
-		display: block;
-	}
-	.navbar ul {
-		display: none;
-	}
-
-	.menu {
-		display: flex;
-	}
-
-}

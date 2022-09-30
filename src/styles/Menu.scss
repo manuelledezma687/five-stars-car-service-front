@@ -1,38 +1,37 @@
 @import 'vars';
 
-.Menu {
-	width: 100px;
-	height: auto;
-	border: 1px solid var(--very-light-pink);
-	border-radius: 6px;
-	padding: 20px 20px 0 20px;
-	position: absolute;
-	top: 60px;
-	right: 50px;
+ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	gap: 10px;
+	width: 288px;
+	height: 180px;
+	background: #FEF9EA;
+	border-radius: 4px;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
 }
-.Menu ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-.Menu ul li {
-	text-align: end;
-}
-.Menu ul li:nth-child(1),
-.Menu ul li:nth-child(2) {
-	font-weight: bold;
-}
-.Menu ul li:last-child {
-	padding-top: 20px;
-	border-top: 1px solid var(--very-light-pink);
-}
-.Menu ul li:last-child a {
-	color: var(--hospital-green);
-	font-size: var(--sm);
-}
-.Menu ul li a {
-	color: var(--back);
-	text-decoration: none;
-	margin-bottom: 20px;
-	display: inline-block;
+
+li{
+	width: 49px;
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 150% */
+	display: flex;
+	align-items: center;
+	/* color/primario/negro */
+	color: #030200;
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
 }

@@ -2,14 +2,15 @@ import React from 'react';
 import '../styles/Hero.scss';
 import corolla from '../assets/images/white-corolla.png';
 import { motion } from "framer-motion";
+import Form from '../components/Form';
 
 const Hero = () => {
     return (
-        <div className="hero-container">
+        <section className="hero-container">
             <div className='hero-banner'>
                 <div className='content-box'>
-                    <h1>WE ALWAYS ACCOMPANY YOU</h1>
-                    <p>If you travel to Atlanta for pleasure or business, FiveStar Car service helps you move around the City comfortably and safely 24 hours a day.</p>
+                    <p className='main-message'>If you travel to Atlanta for pleasure or business, FiveStar Car service helps you move around the City comfortably and safely 24 hours a day.</p>
+                    <h1 className='just-time'>Just in time with FiveStars</h1>
                 </div>
                 <motion.img 
                 whileHover={{
@@ -21,12 +22,8 @@ const Hero = () => {
                 }}
                 src= {corolla} alt="corolla" className="white-corolla" />
             </div>
-
-            <div className='hero-calculator'>
-                <h1>Example</h1>
-                <p>Example</p>
-            </div>
-        </div>
+            <Form/>
+        </section>
 
     );
 }
