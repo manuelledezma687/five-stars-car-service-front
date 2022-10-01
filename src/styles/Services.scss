@@ -2,59 +2,59 @@
 
 .service-main{
     margin: 8rem 0 0 0;
-    display: block;
-    flex-direction: column;
-    align-items: flex-end;
+    display:block;
     position: relative;
-    height: 1198px;
+    height: auto;
     width: 100%;
+    justify-content:space-around;
 }
+
 .services {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 275;
     font-size: 3rem;
     line-height: 36px;
-    align-items: center;
-    color: #000000;
+    color: var(--black);
     text-align: center;
-
 }
 
 .container-service {
+    align-self: center;
     display: block;
     width: auto;
 }
-img{
+
+#image-service{
+    text-align: center;
     flex: none;
     order: 0;
     flex-grow: 0;
+    width: 180px;
+    margin: auto;
+    display: block;
 }
-p  {
+
+.p-service {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     line-height: 22px;
-    color: #000000;
+    color: var(--black);
     flex: none;
     text-align: center;
-    width: 80%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
-h2{
+h2.service-title{
     height: 26px;
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: var(--eg);
     line-height: 26px;
-    /* identical to box height, or 144% */
-    display: flex;
-    color: #000000;}
-
-.service-list {
-    justify-content: baseline;
-    display: grid;
+    color: var(--black);
 }

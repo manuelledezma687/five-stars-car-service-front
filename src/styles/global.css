@@ -2,8 +2,6 @@ body {
 	margin: 0;
 	font-family: 'Poppins';
 	background-color: var(--white);
-	/* background-image: url("../assets/images/bg.jpg");
-	background-repeat: no-repeat; */
 	box-sizing: border-box;
     padding: 0;
 	font-size: 62.5%;
@@ -17,3 +15,8 @@ h1 {
 p {
 	font-size: var(--sm);
 }
+
+span {
+    color: var(--golden);
+	font-weight: bold;
+    }

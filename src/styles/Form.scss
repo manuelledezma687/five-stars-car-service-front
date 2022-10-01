@@ -1,134 +1,70 @@
 @import 'vars';
 
 .main-form {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 9px;
-    position: relative;
-    width: 50%;
-    height: auto;
-    }
-
+    display: block;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
 .title {
     width: 90%;
-    height: 44px;
-    /* p/14px-0.8rem/22-Regular */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 275;
-    font-size: 28px;
+    font-size: var(--md);
     line-height: 36px;
-    /* or 129% */
-    
-    display: flex;
     align-items: center;
     text-align: center;
-    
-    /* color/primario/negro */
-    
-    color: #030200;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+    color: var(--black);
+    margin: auto;
+    margin-bottom: 30px;
     }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 8px;
-    gap: 4px;
+    align-items: center;
+    gap: 8px;
     width: 90%;
     height: 512px;
-    background: #FFFFFF;
-    /* Inside auto layout */
+    background: var(--white);
     flex: none;
     order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.send-form {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 93%;
-    height: 50px;
-    /* color/secundario */
-    background: #506496;
-    border-radius: 8px;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    /* identical to box height, or 157% */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* color/neutro2 */
-    color: #E2D3A8;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+    margin: auto;
 }
 
 .select-type {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 0px;
-    gap: 10px;
-    width: 102%;
     height: 66px;
-    background: #FEF9EA;
-    /* Inside auto layout */
-    flex: none;
+    background: var(--very-light-golden);
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 .select-travel {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 8px;
-    gap: 10px;
-    width: 149.5px;
     height: 46px;
-    background: #E2D3A8;
+    background: var(--light-golden);
     border-radius: 4px 4px 0px 0px;
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 1;
     width: 133.5px;
-    height: 26px;
-    /* H3/18px-1.125rem/26-Bold */
+    height: 4rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    /* identical to box height, or 144% */
+    font-size: var(--md);
     display: flex;
     align-items: center;
-    color: #000000;
-    /* Inside auto layout */
+    color: var(--black);
+    text-align: center;
 }
 
 .inputs-form {
@@ -138,13 +74,10 @@
     padding: 8px;
     height: 72px;
     width: 100%;
-    /* color/neutro2 */
-    background: #E2D3A8;
+    background: var(--light-golden);
     border-radius: 4px;
-    /* Inside auto layout */
     flex: none;
     order: 1;
-    align-self: stretch;
     flex-grow: 0;
 }
 
@@ -152,9 +85,9 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--md);
     line-height: 24px;
-    color: #030200;
+    color: var(--black);
     flex: none;
     order: 0;
     flex-grow: 1;
@@ -164,9 +97,9 @@ input {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--md);
     line-height: 22px;
-    color: #030200;
+    color: var(--black);
     opacity: 0.5;
     flex: none;
     order: 1;
@@ -174,10 +107,24 @@ input {
     outline: none;
 }
 
-.point {
-    width: 24px;
-    height: 24px;
+.icon {
+    width: 30px;
+    height: 30px;
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+button.send-form {
+    flex-direction: row;
+    width: 105%;
+    height: 100px;
+    background: var(--blue);
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: var(--md);
+    color: var(--light-golden);
+    order: 3;
+    margin-top: 4%;
 }

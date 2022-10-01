@@ -1,25 +1,15 @@
 import React from 'react';
 import '../styles/Menu.scss';
+import '../styles/Header.scss';
 
-const Menu = () => {
+function Menu(props) {
 	return (
-			<ul className='menu-list'>
-				<li className="menu-list">
-					<a href="/" >Home</a>
-				</li>
-				<li className="menu-list">
-					<a href="/">Our Services</a>
-				</li>
-				<li className="menu-list">
-					<a href="/">Our Fleet</a>
-				</li>
-				<li className="menu-list">
-					<a href="/">Book Online</a>
-				</li>
-				<li className="menu-list">
-					<a href="/">Contact Us</a>
-				</li>
-			</ul>
+		<div onClick={props.handleClick} 
+		className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
 	);
 }
 
