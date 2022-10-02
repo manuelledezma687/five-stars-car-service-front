@@ -19,28 +19,28 @@ const Form = () => {
                                 <label className="form-label" for="">From</label>
                                 <div className="icon-input">
                                     <img src={pointer} className="icon" alt="" />
-                                    <input name="from" type="text" placeholder="Address Airport" />
+                                    <input id='text' name="from" type="text" placeholder="Address Airport" />
                                 </div>
                             </div>
                             <div className="inputs-form">
                                 <label className="form-label" for="">To</label>
                                 <div className="icon-input">
                                     <img src={pointer} className="icon" alt="" />
-                                    <input type="text" name="to" placeholder="Address Airport" />
+                                    <input id="text" type="text" name="to" placeholder="Address Airport" />
                                 </div>
                             </div>
                             <div className="inputs-form">
                                 <label className="form-label" for="">Date</label>
                                 <div className="icon-input">
                                     <img src={calendar} className="icon" alt="" />
-                                    <input type="date" name="date" placeholder="Address Airport" />
+                                    <input id="date" type="date" name="date" placeholder="Address Airport" />
                                 </div>
                             </div>
                             <div className="inputs-form">
                                 <label className="form-label" for="">Time</label>
                                 <div className="icon-input">
                                     <img src={time} className="icon" alt="" />
-                                    <input type="time" name="time" placeholder="Address Airport" />
+                                    <input type="time" id="time" name="time" placeholder="Address Airport" />
                                 </div>
                             </div>
                             <button className="send-form">Enviar formulario</button>

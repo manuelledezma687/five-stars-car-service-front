@@ -93,7 +93,10 @@
     flex-grow: 1;
 }
 
-input {
+#text ,
+#date,
+#time
+{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -105,6 +108,14 @@ input {
     order: 1;
     flex-grow: 1;
     outline: none;
+	border-radius: 5px;
+	border: 2px solid #e2e2e2;
+	color: #1f1f1f;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #0085FF;
 }
 
 .icon {
@@ -128,3 +139,5 @@ button.send-form {
     order: 3;
     margin-top: 4%;
 }
+
+
