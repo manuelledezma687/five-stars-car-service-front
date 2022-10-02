@@ -2,11 +2,11 @@ import React from 'react';
 import '../styles/Header.scss';
 import logo from '../assets/logos/logo.png';
 import { useState } from 'react';
-import Menu from './Menu';
 import Home from '../assets/icons/home.svg'
 import People from '../assets/icons/people.svg'
 import Phone from '../assets/icons/phone.svg'
 import BookMark from '../assets/icons/bookmark.svg'
+import menu from '../assets/icons/menu.svg'
 
 const Header = () => {
     const [clicked, setClicked] = useState(false)
@@ -39,7 +39,7 @@ const Header = () => {
                     <a onClick={handleClick} href="#h">Contact Us</a>
                 </div>
             </ul>
-            <Menu clicked={clicked} handleClick={handleClick} />
+            <img src={menu} alt="Menu Bar" className='menu' clicked={clicked} handleClick={handleClick}/>
         </nav>
     );
 }
